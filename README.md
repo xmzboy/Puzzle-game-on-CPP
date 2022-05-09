@@ -91,3 +91,7 @@ When selecting the first menu item, the user enters the "GameStatus" state.
 When viewing the reference information, the state is considered equal to "RuleStatus".
 
 By selecting the "Exit" option, the program is terminated.
+
+## Class diagram
+
+![Class diagram](https://github.com/xmzboy/Puzzle-game-on-CPP/raw/main/readme_images/class-diagram.png)
