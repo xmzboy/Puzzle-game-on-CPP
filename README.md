@@ -80,10 +80,14 @@ It is the base class for all visible graphic elements. The class consists of the
 
 The class is responsible for monitoring game states.
 The following states are defined in the class:
-* MainMenuStatus (Menu);
-* GameStatus (Game);
-* RuleStatus (Rules).
+* MainMenuStatus (Menu)
+* GameStatus (Game)
+* RuleStatus (Rules)
+
 The constructor performs initial initialization (initial state "MainMenuStatus"). The class contains the "Execution" method – it is responsible for event handling and monitoring the current state. This method contains several blocks for checking events: cursor movement and mouse button pressing. Depending on the existing state, the corresponding surfaces are displayed. The general types of states are formed by overlapping surfaces of different classes. At this stage, the menu is available to the user. There are three items in the menu: "Game", "Background information", "Exit".
+
 When selecting the first menu item, the user enters the "GameStatus" state.
+
 When viewing the reference information, the state is considered equal to "RuleStatus".
+
 By selecting the "Exit" option, the program is terminated.
