@@ -7,6 +7,7 @@ Puzzle game on C++ with SDL2
 - [Quick start](#quick-start)
 - [Structure](#structure)
 - [Project classes](#project-classes)
+- [Description of classes](#description-of-classes)
 
 # How it works
 
@@ -95,3 +96,35 @@ By selecting the "Exit" option, the program is terminated.
 ## Class diagram
 
 ![Class diagram](https://github.com/xmzboy/Puzzle-game-on-CPP/raw/main/readme_images/class-diagram.png)
+
+# Description of classes
+
+## Class Intro description
+
+The class declaration is in the header file – intro.h, the class definition in the file – intro.cpp.
+
+According to the project, methods for loading an image and displaying a splash screen were created for the Intro class.
+
+The "Intro" class contains the methods:
+```c++
+LoadImage()	// responsible for loading the image;
+show()		// responsible for the output of the splash screen.
+`````
+The result of the "Intro" class constructor:
+
+![Intro](https://github.com/xmzboy/Puzzle-game-on-CPP/raw/main/readme_images/intro.jpg)
+
+## Class MainMenu description
+
+The class declaration is in the header file – MainMenu.h, the class definition in the file – MainMenu.cpp.
+
+According to the project, a method for displaying the main menu was created for the "MainMenu" class. The main menu button objects are created in the class constructor.
+
+The "MainMenu" class contains the method:
+```c++
+Show(SDL_Renderer *const &)	// responsible for displaying the main menu.
+EventMenu(SDL_Event &)		// the status of pressing the key.
+`````
+The result of the "MainMenu" class constructor:
+
+![MainMenu](https://github.com/xmzboy/Puzzle-game-on-CPP/raw/main/readme_images/mainmenu.png)
