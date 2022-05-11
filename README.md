@@ -128,3 +128,37 @@ EventMenu(SDL_Event &)		// the status of pressing the key.
 The result of the "MainMenu" class constructor:
 
 ![MainMenu](https://github.com/xmzboy/Puzzle-game-on-CPP/raw/main/readme_images/mainmenu.png)
+
+## Class Rules description
+
+The class declaration is in the header file – Rules.h, the class definition in the file – Rules.cpp .
+
+According to the project, a method for displaying and displaying information about the creator of the program, as well as the rules of the game, was created for the "Rules" class. In the class constructor, a texture is created with reference information, and an exit button to the main menu is also created.
+
+The "Rules" class contains the method:
+```c++
+Show(SDL_Renderer *const &)	// is responsible for displaying reference information about the program.
+EventMenu(SDL_Event &)		// the status of pressing the key.
+`````
+
+## Class Stat description
+
+The class declaration is in the header file – Stat.h, the class definition in the file – Stat.cpp .
+
+According to the project, methods were created for the "Stat" class responsible for displaying and displaying the puzzle selection menu, as well as methods responsible for processing the puzzle selection event.
+
+The "Stat" class contains methods:
+```c++
+show()				// responsible for displaying the puzzle selection menu.
+draw_items()			// draws the components of the puzzle selection menu.
+load_from_directory()		// loading the image.
+load_from_file()		// responsible for loading information about the puzzle.
+save()				// saves information to a file.
+update(Info *info)		// data update.
+add_info(Info *info)		// a method for adding data to the list.
+handle_event(SDL_Event * event)	// event tracking.
+EventMenu(SDL_Event &)		// the status of pressing the key.
+`````
+The result of the constructor of the "Stat" class:
+
+![Stat](https://github.com/xmzboy/Puzzle-game-on-CPP/raw/main/readme_images/stat.png)
