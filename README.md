@@ -162,3 +162,48 @@ EventMenu(SDL_Event &)		// the status of pressing the key.
 The result of the constructor of the "Stat" class:
 
 ![Stat](https://github.com/xmzboy/Puzzle-game-on-CPP/raw/main/readme_images/stat.png)
+
+## Class Game description
+
+The class declaration is in the header file – Game.h, the class definition in the file – Game.cpp .
+
+According to the project, for the "Game" class, methods were created that draw the board for assembling the puzzle, methods that break the original image into puzzle pieces, methods that display them randomly on the sidebar, as well as a method that creates a timer that marks the time of assembling the puzzle.
+
+The "Game" class contains methods:
+```c++
+Show(SDL_Renderer *const &)		// responsible for displaying the game on the screen.
+load_image(const char* filename)	// responsible for loading the puzzle image.
+draw_board()				// responsible for drawing the puzzle assembly board.
+draw_preview()				// responsible for displaying the hint.
+randomize_feed()			// responsible for displaying the puzzle pieces in random order.
+draw_feed()				// responsible for the output of puzzle pieces.
+draw_timer(int seconds, int previews)	// responsible for creating a timer.
+EventGame(SDL_Event &)			// the status of pressing the key.
+`````
+The result of the constructor of the "Game" class:
+
+![Game](https://github.com/xmzboy/Puzzle-game-on-CPP/raw/main/readme_images/game.png)
+
+## Class Texture description
+
+The class declaration is in the header file – Texture.h, the class definition in the file – Texture.cpp.
+
+According to the project, methods were created for the "Texture" class to load an image onto this texture, display it, output text, and clear the texture.
+
+The "Texture" class contains methods:
+```c++
+LoadFromFile(const char* path)											// image loading.
+CreateTexture(int width, int height, SDL_TextureAccess access, int x = 0, int y = 0)				// texture creation.
+loadFromRenderedText(const char* textureText, SDL_Color textColor, TTF_Font* gFont)				// creates an image from a string.
+loadFromRenderedTextWrapped(const char *textureText, SDL_Color textColor, ttf_font *gfont, int textWidth)	// creates an image from a string with an area of the specified width.
+free()														// freeing the texture.
+setAlpha(Uint8 alpha)												// setting the alpha modulation.
+setRenderTarget(bool enable)											// the choice of the visualizer.
+RenderCopy(SDL_Renderer* renderer, SDL_Rect* frame, SDL_Rect* scrRect)						// copying to the visualizer.
+SetRenderParameters(int x, int y, int w, int h)									// setting the parameters of the visualizer.
+render(int xOffcet = 0, int yOffcet = 0)									// renders the texture at a given point.
+getWidth()													// setting the width.
+getHeight()													// height setting.
+GetPosX()													// setting the x coordinate.
+GetPosY()													// setting the y coordinate.
+`````
