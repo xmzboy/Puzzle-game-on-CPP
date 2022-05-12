@@ -196,14 +196,16 @@ LoadFromFile(const char* path)											// image loading.
 CreateTexture(int width, int height, SDL_TextureAccess access, int x = 0, int y = 0)				// texture creation.
 loadFromRenderedText(const char* textureText, SDL_Color textColor, TTF_Font* gFont)				// creates an image from a string.
 loadFromRenderedTextWrapped(const char *textureText, SDL_Color textColor, ttf_font *gfont, int textWidth)	// creates an image from a string with an area of the specified width.
-free()														// freeing the texture.
-setAlpha(Uint8 alpha)												// setting the alpha modulation.
-setRenderTarget(bool enable)											// the choice of the visualizer.
-RenderCopy(SDL_Renderer* renderer, SDL_Rect* frame, SDL_Rect* scrRect)						// copying to the visualizer.
-SetRenderParameters(int x, int y, int w, int h)									// setting the parameters of the visualizer.
-render(int xOffcet = 0, int yOffcet = 0)									// renders the texture at a given point.
-getWidth()													// setting the width.
-getHeight()													// height setting.
-GetPosX()													// setting the x coordinate.
-GetPosY()													// setting the y coordinate.
+
+
+free()									// freeing the texture.
+setAlpha(Uint8 alpha)							// setting the alpha modulation.
+setRenderTarget(bool enable)						// the choice of the visualizer.
+RenderCopy(SDL_Renderer* renderer, SDL_Rect* frame, SDL_Rect* scrRect)	// copying to the visualizer.
+SetRenderParameters(int x, int y, int w, int h)				// setting the parameters of the visualizer.
+render(int xOffcet = 0, int yOffcet = 0)				// renders the texture at a given point.
+getWidth()								// setting the width.
+getHeight()								// height setting.
+GetPosX()								// setting the x coordinate.
+GetPosY()								// setting the y coordinate.
 `````
