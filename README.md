@@ -208,3 +208,38 @@ getHeight()					// height setting.
 GetPosX()					// setting the x coordinate.
 GetPosY()					// setting the y coordinate.
 `````
+
+## Class Button description
+
+The class declaration is in the header file – Button.h, the class definition in the file – Button.cpp .
+
+According to the project, methods for creating, displaying, changing colors and processing button clicks were created for the "Button" class.
+
+The "Button" class contains methods:
+```c++
+EventHandler(SDL_Event& e)			// responsible for processing button clicks.
+eventHandlerGame(SDL_Event& e)			// processing of pressing the button in the puzzle selection menu.
+render(int offcetX = 0, int offcetY = 0)	// renders the texture at a given point.
+SetNormalColor()				// sets the texture text color to the specified one.
+SetPressedColor()				// sets the color of the texture text when you click on it.
+setText(const char* text, TTF_Font* font)	// setting text to texture.
+SetHighlightedColor()				// sets the color of the texture text when the mouse cursor hovers over it.
+`````
+
+## Class Info description
+
+The class declaration is in the header file – menu.h, the class definition in the file – menu.cpp .
+
+According to the project, methods were created for the "Info" class that are responsible for the correct loading and output of time, as well as the number of hints and the picture used in the game.
+
+The "Info" class contains methods:
+```c++
+get_string()	// getting a string with data about the puzzle to write to a file.
+get_text()	// getting a string with data about the puzzle to display in the menu.
+`````
+
+The "Info" class contains constructors:
+```c++
+Info (std::string line, TTF_Font * font)				// Getting data from a row.
+Info (std::string _filename, int _time, int _previews, TTF_Font * font)	// Data initialization.
+`````
