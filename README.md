@@ -243,3 +243,23 @@ The "Info" class contains constructors:
 Info (std::string line, TTF_Font * font)				// Getting data from a row.
 Info (std::string _filename, int _time, int _previews, TTF_Font * font)	// Data initialization.
 `````
+
+## Class Graphics description
+
+The class declaration is in the header file – Graphics.h, the class definition in the file – Graphics.cpp.
+
+According to the project, the following fields were created for the "Graphics" class:
+* a pointer to a texture for caching data
+* Rect structure containing the definition of a rectangle (x, y coordinates of the upper left point, width and height)
+
+The initial initialization of texture coordinates is performed in the constructor.
+
+## Class MainWindow description
+
+The class declaration is in the header file – MainWindow.h, the class definition in the file – MainWindow.cpp.
+
+According to the project, the class should be responsible for monitoring the game states.
+
+The constructor performs initial initialization.
+
+The class contains the method "Execution(SDL_Window *const &, SDL_Renderer *const &)" – which is responsible for event handling and monitoring the current state. This method contains several blocks for checking events: cursor movement and mouse button pressing. Depending on the existing state, the corresponding surfaces are displayed.
